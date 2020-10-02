@@ -102,7 +102,16 @@ const minjae = {name: 'sonminjae', age: 17};
 minjae.age = 18; //가능
 minjae = clzzi; // 불가능
 
-
+// 5. Dynamic typing: dynamically typed language
+// 할당된 값에 따라서 자동으로 자료형지정
+let test = 'hello';
+console.log(`value: ${text}, type: ${typeof text}`); //hello , string
+text = 1;
+console.log(`value: ${text}, type: ${typeof text}`); //1, number
+text = '7' + 5;
+console.log(`value: ${text}, type: ${typeof text}`); // 75, string
+text = '8' / 2;
+console.log(`value: ${text}, type: ${typeof text}`); //4 , number
 
 
 
