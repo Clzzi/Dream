@@ -59,6 +59,13 @@ console.log(nAn);
 const bigInt = 13415n;
 console.log(`value: ${bigInt}, type: ${typeof bigInt}`);
 
+// string , 백틱(backtic) ``사용하기
+const char = 'c';
+const brendan = 'brendan';
+const greeting = 'hello' + brendan;
+console.log(`value: ${greeting}, type: ${typeof greeting}`);
+const helloBob = `hi ${brendan}!`; //template literals (string)
+console.log(`value: ${helloBob}, type: ${typeof helloBob}`);
 
 
 
