@@ -84,6 +84,12 @@ console.log(`value: ${nothing}, type: ${typeof nothing}`);
 let x;
 console.log(`value: ${x}, type: ${typeof x}`);
 
+//symbol, create unique identifilers for objects
+// 값을 우선할당하고싶을때 사용한다 
+const symbol1 = Symbol('id');
+const symbol2 = Symbol('id');
+console.log(symbol1 === symbol2); //false
+
 
 
 
