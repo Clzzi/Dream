@@ -27,6 +27,13 @@ console.log(globalName);
     var 는 blockscope에 먹히지 않음
 */
 
+/* 3. const(Contants)
+    const는 선언한후 값변경이 불가능함
+    const를 쓰는 이유
+    - 보안 , - 동시에 값을 변경하는걸 방지 , - 실수방지
+ */
+const daysInweek = 7;
+const maxNumber = 5;
 
 
 
