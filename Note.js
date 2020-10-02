@@ -55,6 +55,10 @@ console.log(infinity);
 console.log(negativeInfinity);
 console.log(nAn);
 
+//bigInt (아직 쓰지 않지만 새로이 나옴)
+const bigInt = 13415n;
+console.log(`value: ${bigInt}, type: ${typeof bigInt}`);
+
 
 
 
