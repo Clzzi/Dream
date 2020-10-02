@@ -97,6 +97,11 @@ console.log(gSymbol1 === gSymbol2); //true
 console.log(`value: ${symbol1.description}, type: ${typeof symbol1}`)
 // 심볼을 출력할때는 .description으로 문자열로 출력해야함
 
+//object, real-life object, data structure 객체
+const minjae = {name: 'sonminjae', age: 17};
+minjae.age = 18; //가능
+minjae = clzzi; // 불가능
+
 
 
 
