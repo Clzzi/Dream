@@ -35,6 +35,19 @@ console.log(globalName);
 const daysInweek = 7;
 const maxNumber = 5;
 
+/* 4. Variable types
+    - primitive type(더이상 쪼개질수없는 단위) : number, string, boolean, null, undefined, symbol
+    - object type(primitive를 한박스로 묶어서 관리)
+    - function, first-class function (함수안에 함수를 리턴가능함)
+    들어가는 값에따라 자동으로 정수형인지 소수점인지 문자열인지 판단해줌 
+*/
+
+const count = 23; // integer 정수형
+const size = 16.9// decimal number 소수점
+console.log(`value: ${count}, type: ${typeof count}`);
+console.log(`value: ${size}, type: ${typeof size}`);
+
+
 
 
 
