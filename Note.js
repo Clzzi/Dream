@@ -47,6 +47,14 @@ const size = 16.9// decimal number 소수점
 console.log(`value: ${count}, type: ${typeof count}`);
 console.log(`value: ${size}, type: ${typeof size}`);
 
+// number - speicla numeric values: infinity, - infinity , Nan(Not a number)
+const infinity = 1 / 0;
+const negativeInfinity = -1 / 0;
+const nAn = 'Not a number' / 2;
+console.log(infinity);
+console.log(negativeInfinity);
+console.log(nAn);
+
 
 
 
