@@ -93,3 +93,22 @@ if (name === 'minjae'){
 // condition ? value1 : value2;
 console.log(name === 'minjae' ? 'yes' : 'no');
 
+/* 10. Switch statment (스위치 케이스)
+    use for multiple if checks
+    use for enum-like value check
+    use for multiple type checks in TS    
+*/
+const browser = 'IE';
+switch(browser) {
+    case 'IE':
+        console.log('go away!');
+        break;
+    case 'Chorme':
+    case 'Firefox':
+        console.log('love you!');
+        break;
+    default:
+        console.log('same all!');
+        break;
+}
+
