@@ -112,3 +112,14 @@ switch(browser) {
         break;
 }
 
+/* 11. Loops(while문)
+    while loop, while the condition is truthy,
+    body code is executed.
+*/
+let i = 3;
+while(i > 0){
+    console.log(`while: ${i}`);
+    i--;
+}
+
+
