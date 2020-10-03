@@ -89,3 +89,7 @@ if (name === 'minjae'){
     console.log('unknown');
 }
 
+// 9. Ternary operators: ? --> 삼항연산자
+// condition ? value1 : value2;
+console.log(name === 'minjae' ? 'yes' : 'no');
+
