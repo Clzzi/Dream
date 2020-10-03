@@ -78,3 +78,14 @@ console.log(minjae1 == minjae2); //false
 console.log(minjae1 === minjae2); //false
 console.log(minjae1 === minjae3); //true
 
+// 8. Conditional operators: if -- 조건 연산자
+//if, else if, else
+const name = 'minjae';
+if (name === 'minjae'){
+    console.log('Welcome, Minjae!');
+} else if(name === 'coder'){
+    console.log('You are amazing coder');
+} else{
+    console.log('unknown');
+}
+
