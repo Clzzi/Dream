@@ -122,4 +122,11 @@ while(i > 0){
     i--;
 }
 
+//do while loop, body code is executed first, 
+// then check the condition --> do while반복문 먼저 do부분을 실행한후 while조건껴서 실행
+do {
+    console.log(`do while: ${i}`);
+    i--;
+} while (i > 0);
+
 
