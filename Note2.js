@@ -34,3 +34,27 @@ console.log(10 <= 6); // less than or equal
 console.log(10 > 6); // greater than
 console.log(10 >= 6);  // greater than or equal
 
+// 6. Logical operators: ||(or) , &&(and) , !(not)
+const value1 = false;
+const value2 = 4 < 2;
+function check(){
+    for (let i = 0; i < 10; i++)
+    {//wasting time
+        console.log('x');
+    }
+    return true;
+}
+// || (or)
+console.log(`or : ${value1 || value2 || check()}`);
+/* 이코드는 value1,value2,check함수 중에 하나라도 true가 있으면 그걸 출력해주는
+    코드입니다. 3개중에 하나라도 true라면 그즉시 멈추게 됩니다.
+    그러므로 연산이 복잡한 함수나 연산자들은 가장 후위에 둬서 마지막 수로 하는것, */
+
+//&& (and)
+console.log(`and : ${value1 && value2 && check()}`);
+/* and도 마찬가지로 true값이 하나라도 나오게되면 바로 출력해주기때문에 
+    무거운 연산일수록 후위에 두는것이 좋아요  */
+
+// ! (not)
+console.log(!value1); //value1 이 true이므로 !연산자를 쓰면 false로 값이 바뀜 
+
