@@ -129,4 +129,21 @@ do {
     i--;
 } while (i > 0);
 
+//for loop, for(begin; condition; step) -- for반복문 & for문 + 지역변수
+for(i = 3;i > 0; i--)
+{
+    console.log(`for: ${i}`);
+}
+
+for(let i = 3; i > 0; i = i - 2)
+{ // inline variable declaration
+    console.log(`inline variable for: ${i}`);
+}
+
+// nested loops -- 중첩 for문
+for ( let i = 0; i < 10; i++){
+    for ( let j = 0; j < 10; j++) {
+        console.log(`i: ${i}, j: ${j}`);
+    }
+}
 
