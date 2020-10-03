@@ -20,3 +20,11 @@ const postIncrement = counter++;
 //후위 연산자 (=> postIncrement = counter; counter = counter + 1 )
 // + , - 둘다 같음 
 
+// 4. Assignment operators -- 증감 연산자
+let x = 3;
+let y = 6;
+x += y; // x = x + y
+x -= y; // x = x - y
+x *= y; // x = x * y
+x /= y; // x = x / y
+
