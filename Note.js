@@ -2,7 +2,7 @@
     ES5때 추가된모드, 바닐라JS쓸때만 사용 */
 'use strict';
 
-/* 2. Variable
+/* 2. Variable(read/write)
     let (ES6때 추가)
     let은 변할수있는 변수
     blockscope는 괄호안에 있는 것들을
@@ -27,13 +27,18 @@ console.log(globalName);
     var 는 blockscope에 먹히지 않음
 */
 
-/* 3. const(Contants)
+/* 3. const(Contants) only read
     const는 선언한후 값변경이 불가능함
     const를 쓰는 이유
     - 보안 , - 동시에 값을 변경하는걸 방지 , - 실수방지
  */
 const daysInweek = 7;
 const maxNumber = 5;
+
+/*
+    Immutable data types: premitive types, frozen objects (i.e. object.freeze()) 변경불가능
+    Mutable data types: all objects by default are mutable in JS 변경가능
+*/
 
 /* 4. Variable types
     - primitive type(더이상 쪼개질수없는 단위) : number, string, boolean, null, undefined, symbol
