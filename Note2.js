@@ -70,3 +70,11 @@ console.log(stringFive != numberFive); // false
 console.log(stringFive === numberFive); // false 
 console.log(stringFive !== numberFive); // true 
 
+//object equality by reference
+const minjae1 = {name: 'minjae'};
+const minjae2 = {name: 'minjae'};
+const minjae3 = minjae1;
+console.log(minjae1 == minjae2); //false
+console.log(minjae1 === minjae2); //false
+console.log(minjae1 === minjae3); //true
+
