@@ -58,3 +58,15 @@ console.log(`and : ${value1 && value2 && check()}`);
 // ! (not)
 console.log(!value1); //value1 이 true이므로 !연산자를 쓰면 false로 값이 바뀜 
 
+// 7. Equality
+const stringFive = '5';
+const numberFive = 5;
+
+// == loose equality, with type conversion
+console.log(stringFive == numberFive); // true
+console.log(stringFive != numberFive); // false
+
+// === strict equality, no type conversion
+console.log(stringFive === numberFive); // false 
+console.log(stringFive !== numberFive); // true 
+
