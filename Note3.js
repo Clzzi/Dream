@@ -48,3 +48,16 @@ function printAll(...args) {
 printAll('dream', 'coding', 'ellie');
 
 
+// 5. Local scope ( 밖에서는 안이 보이지 않고 안에서만 밖을 볼 수 있다. )
+let globalMessage = 'global'; //global variable -- 전역변수
+function printMessage() {
+    let message = 'hello';
+    console.log(message); //local variable -- 지역변수
+    console.log(globalMessage);
+    function printAnother() {
+        console.log(message);
+        let childMessage = 'hey';
+    };
+    // console.log(childMessage); --> 지역변수스코프에서 벗어나 에러발생
+};
+printMessage();
