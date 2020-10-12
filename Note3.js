@@ -61,3 +61,33 @@ function printMessage() {
     // console.log(childMessage); --> 지역변수스코프에서 벗어나 에러발생
 };
 printMessage();
+
+// 6. Return a value
+function sum(a, b) {
+    return a + b;
+};
+const result = sum(1, 2); // 3
+console.log(`sum: ${sum(1, 2)}`);
+
+// 7. Early return, ealry exit
+
+//[bad.ver]
+function upgradeUser(user) {
+    if (user.point > 10) {
+        // long  upgrade logic...
+    }
+};
+//[good.ver]
+function upgradeUser(user) {
+    if(user.point <= 10) {
+        return;
+    }
+    // long upgrade logic...
+};
+
+
+
+
+
+
+
