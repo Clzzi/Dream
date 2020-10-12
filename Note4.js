@@ -77,3 +77,53 @@ const article1 = new Article(1);
 const article2 = new Article(2);
 console.log(Article.publisher); 
 Article.printPublisher(); 
+
+// 5. Inheritance
+// a way for one class to extend another class.
+class Shape {
+    constructor(width, height, color) {
+        this.width = width;
+        this.height = height;
+        this.color = color;
+    }
+
+    draw() {
+        console.log(`${this.color} color !`);
+    }
+
+    getArea() {
+        return width * this.height;
+    }
+}
+
+class Rectangle extends Shpae{}
+
+class Triangle extends Shape{ //overwritting
+    draw() {
+        super.draw();
+        console.log('^');
+    }
+    getArea() {
+        return width * this.height / 2;
+    }
+    toString() {
+        //overwritting
+        return `Triangle: color : ${this.color}`;
+    }
+}
+
+const rectangle = new Rectangle(20,20,'blue');
+rectangle.draw();
+console.log(rectangle.getArea());
+const triangle = new Triangle(20,20,'red');
+triangle.draw(triangle.getArea());
+
+// 6. Class checking: instanceOf
+console.log(rectangle instanceof Rectangle);
+console.log(triangle instanceof Rectangle);
+console.log(triangle instanceof Triangle);
+console.log(triangle instanceof Shape);
+console.log(triangle instanceof Object);
+console.log(triangle.toString());
+
+
