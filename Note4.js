@@ -45,3 +45,16 @@ class User {
 }
 const user1 = new User('Steve','Job',-1);
 console.log(user1.age);
+
+/*
+3. Fields (public,private)
+Top soon!
+https://developer.mozilla,org/en-US/docs/Web/JavaScript/Refe
+*/
+class Experiment {
+    publicField = 2;
+    #privateField = 0;
+}
+const experiment = new Experiment();
+console.log(experiment.publicField);
+console.log(experiment.privateField);
