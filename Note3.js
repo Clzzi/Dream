@@ -20,10 +20,16 @@ function log(message) {
 };
 log('hi'); 
 
-
-
-
-
-
+/*
+2. Parameters
+premitive parameters: passed by value
+object parameters: passed by refernce
+*/
+ 
+//3. Defalut parameters ( added in ES6 )
+function showMessage(message, from = 'unknown') {
+    console.log(`${message} by ${from}`);
+};
+showMessage('Hi!');
 
 
