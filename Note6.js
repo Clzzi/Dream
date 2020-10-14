@@ -46,3 +46,19 @@ fruits.splice(1,1,'a','b'); // 1번위치에서 1개 삭제한후에 그위치�
 // combine two arrays
 const fruits2 = ['man','woman'];
 const newFruits = fruits.concat(fruits2); // 둘이 합쳐짐
+
+// 5. Searching
+// find the index
+console.log(fruits);
+console.log(fruits.indexOf('banana')); 
+
+//includes 
+console.log(fruits.indexOf('abc')); // -1
+console.log(fruits.includes('coco')); // false
+
+// lastIndexOf
+fruits.push('banana');
+console.log(fruits);
+console.log(fruits.indexOf('apple')); 
+// 같은 값이 2개라면 마지막 인자의 위치를 알아낼때는 lastIndexOf를 써주면됨
+console.log(fruits.lastindexOf('apple'));
