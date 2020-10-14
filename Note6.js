@@ -10,3 +10,16 @@ console.log(fruits.length);
 console.log(fruits[0]); //apple
 console.log(fruits[33]); //undefined
 console.log(fruits[fruits.length-1]);
+
+// 3.Looping over an array
+// print all fruits
+// a. for
+for(let i = 0; i<fruits.length;i++)
+    console.log(fruits[i]);
+
+//b. for of
+for(let key of fruits)
+    console.log(key);
+
+//c. forEach
+fruits.forEach((fruit) => console.log(fruit))
