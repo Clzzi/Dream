@@ -80,3 +80,12 @@ const result9 = students.map((student) => student.score)
 .join();
 console.log(result9);
 // result should be: '45, 80, 90, 66, 88'
+
+//Bounus! do Q10 sorted in ascending order
+// sort()함수로 정렬을 할수있다 이것또한 callback함수이므로 sort안에 
+//함수를 쓰고 리턴을 해줘야하는데 a,b값을 받고 a - b해서 마이너스가 나오면 리턴해줌
+const result10 = students.map((student) => student.score)
+.sort((a,b) => a - b)
+.join();
+console.log(result10);
+//result should be: '45, 66, 80, 88, 90'
