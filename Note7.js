@@ -75,13 +75,8 @@ const result8 = students.reduce((prev, curr) => prev + curr.score, 0);
 console.log(result8 / students.length);
 // reduceRight()이라는 함수도 있는데 이것은 배열의 인자끝부터 시작하는 함수임
 
-
-
-
-
-
-
-
-
-
-
+//Q10. Make a string containing all the scores
+const result9 = students.map((student) => student.score)
+.join();
+console.log(result9);
+// result should be: '45, 80, 90, 66, 88'
