@@ -66,3 +66,22 @@ console.log(result7);
 // every();함수는 배열안의 인자들이 모두 특정조건을 만족하면 true, 아니면 false를 리턴해줌
 const result7_1 = students.every((student) => student.score < 50);
 console.log(result7_1); //false
+
+//Q9. compute students' average score
+// reduce()함수는 배열안의 인자들중 뭔가 누적을 해야할때 쓸수있다
+// 함수엔 현재값 과 과거값이 있는데 리턴을 할때 현재값을 리턴해주면 그것은 그다음과정의 과거값이 된다
+const result8 = students.reduce((prev, curr) => prev + curr.score, 0);
+// 시작을 0부터하면 처음 현재값이 0부터 시작이된다,
+console.log(result8 / students.length);
+// reduceRight()이라는 함수도 있는데 이것은 배열의 인자끝부터 시작하는 함수임
+
+
+
+
+
+
+
+
+
+
+
