@@ -44,4 +44,10 @@ const students = [
 ];
 
 const result4 = students.find((student) => student.score === 90);
-console.log(result4)
+console.log(result4);
+
+//Q6. Make an array of enrolled students
+// filter()함수또한 callback형식이고 , enrolled 가 true인것들만 
+//골라서 배열로 만들고싶다고 해서 썼다, find는 원하는것 하나를 찾고 바로 종료해서 못씀 
+const result5 = students.filter((student) => student.enrolled);
+console.log(result5);
