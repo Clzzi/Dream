@@ -50,4 +50,9 @@ console.log(result4);
 // filter()함수또한 callback형식이고 , enrolled 가 true인것들만 
 //골라서 배열로 만들고싶다고 해서 썼다, find는 원하는것 하나를 찾고 바로 종료해서 못씀 
 const result5 = students.filter((student) => student.enrolled);
-console.log(result5);
+console.log(result5); 
+
+//Q7. Make an array containing only the students' scores
+// map()함수는 안에 들어있는 값하나하나에 내가 쓴 fn을 설정해주어 리턴해줌
+const result6 = students.map((student) => student.score);
+console.log(result6); //[45,80,90,66,90]
