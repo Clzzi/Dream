@@ -56,3 +56,13 @@ console.log(result5);
 // map()함수는 안에 들어있는 값하나하나에 내가 쓴 fn을 설정해주어 리턴해줌
 const result6 = students.map((student) => student.score);
 console.log(result6); //[45,80,90,66,90]
+
+//Q8. Check if there is a student with the score lower than 50
+// 배열안에 어떤 특정조건을 만족하는인자가 있는지 확인하고 싶을때는 some()을 사용하기바람
+const result7 = students.some((student) => student.score < 50);
+console.log(result7);
+// true --> some함수를써서 특정조 인자> student.score < 50가 하나라도 있을시에는 true 아니면 false를 리턴해줌
+
+// every();함수는 배열안의 인자들이 모두 특정조건을 만족하면 true, 아니면 false를 리턴해줌
+const result7_1 = students.every((student) => student.score < 50);
+console.log(result7_1); //false
