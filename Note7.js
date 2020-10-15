@@ -21,4 +21,27 @@ console.log(array);
 // 배열의 특정한 부분을 리턴해주는 함수 -> slice(0, 3); 0부터 2까지임
 const array2 = [1,2,3,4,5];
 const result3 = array2.slice(2, 5); // 배열의2번위치부터 4번위치까지를 리턴해줌
-console.log(result3); // [3, 4, 5
+console.log(result3); // [3, 4, 5]
+
+//Q5. Find a student with the score 90
+// 객체에서 원하는 정보를 찾을때 쓰는 함수 find();
+// find()함수는 callback함수로 students객체 안에있는 인자들을
+// 차례대로 콜백해주는데 리턴값이 boolean임, 그래서 return (조건) 이 참일때  true를 리턴해주고 즉시종료함
+class Student {
+    constructor(name,age,enrolled, score) {
+        this.name = name,
+        this.age = age;
+        this.enrolled = enrolled;
+        this.score = score;
+    }
+}
+const students = [
+    new Student('A', 29, true, 45),
+    new Student('B', 28, false, 80),
+    new Student('C', 30, true, 90),
+    new Student('D', 40, false, 66),
+    new Student('E', 18, true, 88),
+];
+
+const result4 = students.find((student) => student.score === 90);
+console.log(result4)
