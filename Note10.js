@@ -38,5 +38,22 @@ fetchNumber
         setTimeout(() => resolve(num - 1), 1000);
     })
 })
-.then(num => console.log(num))
+.then(num => console.log(num));
+
+// 4. Error Handling
+const getHen = () => {
+    new Promise((resolve, rejected) => {
+        setTimeout(() => resolve(':)'), 1000);
+    });
+const getEgg = hen => 
+    new Promise((resolve, reject) => {
+        setTimeout(() => resolve(`${hen} => 0`), 1000);
+    });
+const cook = egg => 
+    new Promise((resolve, reject) => {
+        setTimeout(() => resolve(`${egg} =>:(`), 1000)
+    })
+}
+
+
 
