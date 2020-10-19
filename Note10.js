@@ -14,38 +14,13 @@ const promise = new Promise((resolve, reject) => {
     }, 2000);
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// 2. Consumers: then, catch, finally
+promise //.then도 promise를 리턴해주고 .catch도 promise를 리턴해줌
+    .then((value) => { // -- 성공했을때
+    console.log(value);
+})
+    .catch(error => { // -- 실패했을때
+        console.log(error);
+})
+    .finally(() => {console.log('finally'); // -- 어떤경우에도 출력됨
+});
