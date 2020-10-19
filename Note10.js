@@ -24,3 +24,19 @@ promise //.then도 promise를 리턴해주고 .catch도 promise를 리턴해줌
 })
     .finally(() => {console.log('finally'); // -- 어떤경우에도 출력됨
 });
+
+// 3. Promise Chaning
+const fetchNumber = new Promise((resolve, rejected) => {
+    setTimeout(() => resolve(1), 1000);
+});
+
+fetchNumber
+.then(num => num * 2)
+.then(num => num * 3)
+.then(num => {
+    return new Promise((resolve, rejected) => {
+        setTimeout(() => resolve(num - 1), 1000);
+    })
+})
+.then(num => console.log(num))
+
