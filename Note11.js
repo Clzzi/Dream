@@ -69,14 +69,19 @@ pickFruits().then(console.log);
     return `${apple} + ${banana}`; // --> 2초후에 로그나타남 (직렬)
 } */
 
+// 3. useful Promise APIs
+// Promise.all() --> 병렬적으로 모두 모이게 해줌
+function pickAllFruits() {
+    return Promise.all([getApple(),getBanana()])
+    .then(fruits => fruits.join(' + '));
+}
+pickAllFruits().then(console.log);
+ 
+// Promise.race() --> 함수들중 제일 먼저 되는 하나만 리턴
+function pickOnlyOne() {
+    return Promise.race([getApple(),getBanana()]);
+}
 
-
-
-
-
-
-
-
-
+pickOnlyOne().then(console.log);
 
 
